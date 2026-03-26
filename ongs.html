@@ -2,169 +2,183 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Portal Felino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Felino | ONGs</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <h1 class="site-logo">
-        <img src="assets/icon-portal-felino.png" alt="" />
-        Portal Felino
-      </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">
-              <img src="assets/icon-portal-felino.png" alt="" class="nav-icon" />
-              Início
-            </a>
-          </li>
-          <li>
-            <a href="ongs.html">
-              <img src="assets/icon-ongs.png" alt="" class="nav-icon" />
-              ONGs
-            </a>
-          </li>
-          <li>
-            <a href="doacoes.html">
-              <img src="assets/icon-doacoes.png" alt="" class="nav-icon" />
-              Doações
-            </a>
-          </li>
-          <li>
-            <a href="castracao.html">
-              <img src="assets/icon-castracao.png" alt="" class="nav-icon" />
-              Castração
-            </a>
-          </li>
-          <li>
-            <a href="exigencias.html">
-              <img src="assets/icon-exigencias.png" alt="" class="nav-icon" />
-              Exigências
-            </a>
-          </li>
-          <li>
-            <a href="racas.html">
-              <img src="assets/icon-racas.png" alt="" class="nav-icon" />
-              Raças
-            </a>
-          </li>
-          <li>
-            <a href="catsitters.html">
-              <img src="assets/icon-catsitters.png" alt="" class="nav-icon" />
-              Cat Sitters
-            </a>
-          </li>
-        </ul>
+      <div class="logo-bar">
+        <div class="logo-bar-content">
+          <a href="index.html" class="site-logo">
+            <img src="assets/icons/icon-portal-felino.png" alt="Logo do Portal Felino" />
+            <span>Portal Felino</span>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Navegação principal">
+        <div class="nav-container">
+          <a class="nav-box" href="index.html">
+            <img src="assets/navbar/cat.png" alt="" aria-hidden="true" />
+            <span>Início</span>
+          </a>
+
+          <a class="nav-box nav-box-active" href="ongs.html" aria-current="page">
+            <img src="assets/navbar/heart.png" alt="" aria-hidden="true" />
+            <span>ONGs</span>
+          </a>
+
+          <a class="nav-box" href="doacoes.html">
+            <img src="assets/navbar/box.png" alt="" aria-hidden="true" />
+            <span>Doações</span>
+          </a>
+
+          <a class="nav-box" href="castracoes.html">
+            <img src="assets/navbar/scissors.png" alt="" aria-hidden="true" />
+            <span>Castração</span>
+          </a>
+
+          <a class="nav-box" href="exigencias.html">
+            <img src="assets/navbar/check.png" alt="" aria-hidden="true" />
+            <span>Exigências</span>
+          </a>
+
+          <a class="nav-box" href="racas.html">
+            <img src="assets/navbar/breed.png" alt="" aria-hidden="true" />
+            <span>Raças</span>
+          </a>
+
+          <a class="nav-box" href="catsitters.html">
+            <img src="assets/navbar/sitter.png" alt="" aria-hidden="true" />
+            <span>Cat Sitters</span>
+          </a>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <h2>ONGs para Adoção de Gatos</h2>
+    <main class="container">
+      <section class="page-header">
+        <h1>ONGs para Adoção de Gatos</h1>
         <p>
           Conheça as principais ONGs que trabalham com resgate e adoção de gatos. Todas são instituições confiáveis e
           comprometidas com o bem-estar animal.
         </p>
-        <img src="assets/ongs.png" alt="Dois gatinhos sendo alimentados" class="hero-image" />
-        <form class="search-form">
-          <div class="search-box">
-            <img src="assets/search.png" alt="" />
-            <input type="search" id="search-ong" placeholder="Buscar por nome, região ou descrição..." />
-          </div>
-        </form>
       </section>
 
-      <section class="ongs">
+      <section class="page-banner">
+        <img src="assets/pages/ongs.png" alt="Gatos disponíveis para adoção" />
+      </section>
+
+      <section class="search-section" aria-label="Busca de ONGs">
+        <label class="search-label" for="search-ong">Buscar ONG</label>
+        <input id="search-ong" class="search-input" type="text" placeholder="Buscar por nome, região ou descrição..." />
+      </section>
+
+      <section class="ongs-list" aria-label="Lista de ONGs">
         <article class="ong-card">
-          <h3>Amigos dos Gatos SP</h3>
-          <p>ONG dedicada ao resgate e adoção de gatos abandonados. Mais de 500 gatos adotados desde 2015.</p>
-          <address>
-            <div>
-              <img src="assets/map-pin.png" alt="" class="contact-icon" />
-              Rua das Flores, 123 - São Paulo, SP
-            </div>
-            <div>
-              <img src="assets/mail.png" alt="" class="contact-icon" />
-              contato@amigosdosgatos.org.br
-            </div>
-            <div>
-              <img src="assets/phone.png" alt="" class="contact-icon" />
-              (11) 98765-4321
-            </div>
-            <div>
-              <img src="assets/external-link.png" alt="" class="contact-icon" />
-              <a href="#">www.amigosdosgatos.org.br</a>
-            </div>
-          </address>
-          <p>Horário de funcionamento: Seg-Sáb: 9h às 18h</p>
+          <h2>Amigos dos Gatos SP</h2>
+          <p class="ong-description">
+            ONG dedicada ao resgate e adoção de gatos abandonados. Mais de 500 gatos adotados desde 2015.
+          </p>
+
+          <div class="ong-info-grid">
+            <p class="ong-info-item">📍 Rua das Flores, 123 - São Paulo, SP</p>
+            <p class="ong-info-item">📞 (11) 98765-4321</p>
+            <p class="ong-info-item">✉ contato@amigosdosgatos.org.br</p>
+            <p class="ong-info-item">🔗 www.amigosdosgatos.org.br</p>
+          </div>
+
+          <div class="ong-hours">
+            <strong>Horário de funcionamento:</strong>
+            <span>Seg-Sáb: 9h às 18h</span>
+          </div>
         </article>
 
         <article class="ong-card">
-          <h3>Lar Felino</h3>
-          <p>
+          <h2>Lar Felino</h2>
+          <p class="ong-description">
             Especializada em gatos idosos e com necessidades especiais. Atendimento personalizado para cada adotante.
           </p>
-          <address>
-            <div>
-              <img src="assets/map-pin.png" alt="" class="contact-icon" />
-              Av. Paulista, 456 - São Paulo, SP
-            </div>
-            <div>
-              <img src="assets/mail.png" alt="" class="contact-icon" />
-              adocao@larfelino.org
-            </div>
-            <div>
-              <img src="assets/phone.png" alt="" class="contact-icon" />
-              (11) 97654-3210
-            </div>
-            <div>
-              <img src="assets/external-link.png" alt="" class="contact-icon" />
-              <a href="#">www.larfelino.org</a>
-            </div>
-          </address>
-          <p>Horário de funcionamento: Ter-Dom: 10h às 17h</p>
+
+          <div class="ong-info-grid">
+            <p class="ong-info-item">📍 Av. Paulista, 456 - São Paulo, SP</p>
+            <p class="ong-info-item">📞 (11) 97654-3210</p>
+            <p class="ong-info-item">✉ adocao@larfelino.org</p>
+            <p class="ong-info-item">🔗 www.larfelino.org</p>
+          </div>
+
+          <div class="ong-hours">
+            <strong>Horário de funcionamento:</strong>
+            <span>Ter-Dom: 10h às 17h</span>
+          </div>
         </article>
 
         <article class="ong-card">
-          <h3>Patinhas Solidárias</h3>
-          <p>ONG que trabalha com resgate de gatos de rua e programas de conscientização sobre posse responsável.</p>
-          <address>
-            <div>
-              <img src="assets/map-pin.png" alt="" class="contact-icon" />
-              Rua da Consolação, 789 - São Paulo, SP
-            </div>
-            <div>
-              <img src="assets/mail.png" alt="" class="contact-icon" />
-              info@patinhassolidarias.org.br
-            </div>
-            <div>
-              <img src="assets/phone.png" alt="" class="contact-icon" />
-              (11) 96543-2109
-            </div>
-            <div>
-              <img src="assets/external-link.png" alt="" class="contact-icon" />
-              <a href="#">www.patinhassolidarias.org.br</a>
-            </div>
-          </address>
-          <p>Horário de funcionamento: Seg-Sex: 14h às 19h, Sáb: 9h às 15h</p>
+          <h2>Instituto Miau</h2>
+          <p class="ong-description">
+            Foco em educação e adoção responsável. Oferece curso gratuito para novos tutores.
+          </p>
+
+          <div class="ong-info-grid">
+            <p class="ong-info-item">📍 Rua Oscar Freire, 654 - São Paulo, SP</p>
+            <p class="ong-info-item">📞 (11) 94321-0987</p>
+            <p class="ong-info-item">✉ contato@institutomiau.org.br</p>
+            <p class="ong-info-item">🔗 www.institutomiau.org.br</p>
+          </div>
+
+          <div class="ong-hours">
+            <strong>Horário de funcionamento:</strong>
+            <span>Qua-Dom: 11h às 18h</span>
+          </div>
+        </article>
+
+        <article class="ong-card">
+          <h2>Refúgio dos Bigodes</h2>
+          <p class="ong-description">Maior abrigo de gatos da região, com mais de 200 gatos disponíveis para adoção.</p>
+
+          <div class="ong-info-grid">
+            <p class="ong-info-item">📍 Rua Haddock Lobo, 987 - São Paulo, SP</p>
+            <p class="ong-info-item">📞 (11) 93210-9876</p>
+            <p class="ong-info-item">✉ refugio@bigodes.org</p>
+            <p class="ong-info-item">🔗 www.refugiodosbigodes.org</p>
+          </div>
+
+          <div class="ong-hours">
+            <strong>Horário de funcionamento:</strong>
+            <span>Seg-Sáb: 10h às 17h</span>
+          </div>
         </article>
       </section>
 
-      <section class="hints-card">
-        <h2>Dicas antes de visitar uma ONG:</h2>
-        <ul>
-          <li>Entre em contato antes de visitar para confirmar horários e disponibilidade</li>
-          <li>Leve documentos pessoais (RG, CPF, comprovante de residência)</li>
-          <li>Esteja preparado para responder perguntas sobre sua rotina e moradia</li>
-          <li>Seja honesto sobre sua experiência com animais</li>
-          <li>Pergunte sobre o histórico de saúde e comportamento do gato</li>
+      <aside class="tips-box" aria-labelledby="tips-title">
+        <h2 id="tips-title">Dicas antes de visitar uma ONG:</h2>
+        <ul class="tips-list">
+          <li>Entre em contato antes de visitar para confirmar horários e disponibilidade.</li>
+          <li>Leve documentos pessoais, como RG, CPF e comprovante de residência.</li>
+          <li>Esteja preparado para responder perguntas sobre sua rotina e moradia.</li>
+          <li>Seja honesto sobre sua experiência com animais.</li>
+          <li>Pergunte sobre o histórico de saúde e comportamento do gato.</li>
         </ul>
-      </section>
+      </aside>
     </main>
 
     <footer>
-      <p>© 2026 Portal Felino - Ajudando você a cuidar melhor do seu gatinho</p>
+      <div class="footer-content">
+        <img src="assets/icons/icon-portal-felino.png" alt="Logo do Portal Felino" />
+        <p>© 2026 Portal Felino - Ajudando você a cuidar melhor do seu gatinho</p>
+      </div>
     </footer>
   </body>
 </html>

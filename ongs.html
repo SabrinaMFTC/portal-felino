@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="./scripts/ongs.js" defer></script>
   </head>
 
   <body>
@@ -22,7 +23,10 @@
       <div class="logo-bar">
         <div class="logo-bar-content">
           <a href="index.html" class="site-logo">
-            <img src="assets/icons/icon-portal-felino.png" alt="Logo do Portal Felino" />
+            <img
+              src="assets/icons/icon-portal-felino.png"
+              alt="Logo do Portal Felino"
+            />
             <span>Portal Felino</span>
           </a>
         </div>
@@ -35,7 +39,11 @@
             <span>Início</span>
           </a>
 
-          <a class="nav-box nav-box-active" href="ongs.html" aria-current="page">
+          <a
+            class="nav-box nav-box-active"
+            href="ongs.html"
+            aria-current="page"
+          >
             <img src="assets/navbar/heart.png" alt="" aria-hidden="true" />
             <span>ONGs</span>
           </a>
@@ -72,8 +80,9 @@
       <section class="page-header">
         <h1>ONGs para Adoção de Gatos</h1>
         <p>
-          Conheça as principais ONGs que trabalham com resgate e adoção de gatos. Todas são instituições confiáveis e
-          comprometidas com o bem-estar animal.
+          Conheça as principais ONGs que trabalham com resgate e adoção de
+          gatos. Todas são instituições confiáveis e comprometidas com o
+          bem-estar animal.
         </p>
       </section>
 
@@ -83,91 +92,34 @@
 
       <section class="search-section" aria-label="Busca de ONGs">
         <label class="search-label" for="search-ong">Buscar ONG</label>
-        <input id="search-ong" class="search-input" type="text" placeholder="Buscar por nome, região ou descrição..." />
+        <input
+          id="search-ong"
+          class="search-input"
+          type="text"
+          placeholder="Buscar por nome"
+        />
       </section>
 
-      <section class="ongs-list" aria-label="Lista de ONGs">
-        <article class="ong-card">
-          <h2>Amigos dos Gatos SP</h2>
-          <p class="ong-description">
-            ONG dedicada ao resgate e adoção de gatos abandonados. Mais de 500 gatos adotados desde 2015.
-          </p>
-
-          <div class="ong-info-grid">
-            <p class="ong-info-item">📍 Rua das Flores, 123 - São Paulo, SP</p>
-            <p class="ong-info-item">📞 (11) 98765-4321</p>
-            <p class="ong-info-item">✉ contato@amigosdosgatos.org.br</p>
-            <p class="ong-info-item">🔗 www.amigosdosgatos.org.br</p>
-          </div>
-
-          <div class="ong-hours">
-            <strong>Horário de funcionamento:</strong>
-            <span>Seg-Sáb: 9h às 18h</span>
-          </div>
-        </article>
-
-        <article class="ong-card">
-          <h2>Lar Felino</h2>
-          <p class="ong-description">
-            Especializada em gatos idosos e com necessidades especiais. Atendimento personalizado para cada adotante.
-          </p>
-
-          <div class="ong-info-grid">
-            <p class="ong-info-item">📍 Av. Paulista, 456 - São Paulo, SP</p>
-            <p class="ong-info-item">📞 (11) 97654-3210</p>
-            <p class="ong-info-item">✉ adocao@larfelino.org</p>
-            <p class="ong-info-item">🔗 www.larfelino.org</p>
-          </div>
-
-          <div class="ong-hours">
-            <strong>Horário de funcionamento:</strong>
-            <span>Ter-Dom: 10h às 17h</span>
-          </div>
-        </article>
-
-        <article class="ong-card">
-          <h2>Instituto Miau</h2>
-          <p class="ong-description">
-            Foco em educação e adoção responsável. Oferece curso gratuito para novos tutores.
-          </p>
-
-          <div class="ong-info-grid">
-            <p class="ong-info-item">📍 Rua Oscar Freire, 654 - São Paulo, SP</p>
-            <p class="ong-info-item">📞 (11) 94321-0987</p>
-            <p class="ong-info-item">✉ contato@institutomiau.org.br</p>
-            <p class="ong-info-item">🔗 www.institutomiau.org.br</p>
-          </div>
-
-          <div class="ong-hours">
-            <strong>Horário de funcionamento:</strong>
-            <span>Qua-Dom: 11h às 18h</span>
-          </div>
-        </article>
-
-        <article class="ong-card">
-          <h2>Refúgio dos Bigodes</h2>
-          <p class="ong-description">Maior abrigo de gatos da região, com mais de 200 gatos disponíveis para adoção.</p>
-
-          <div class="ong-info-grid">
-            <p class="ong-info-item">📍 Rua Haddock Lobo, 987 - São Paulo, SP</p>
-            <p class="ong-info-item">📞 (11) 93210-9876</p>
-            <p class="ong-info-item">✉ refugio@bigodes.org</p>
-            <p class="ong-info-item">🔗 www.refugiodosbigodes.org</p>
-          </div>
-
-          <div class="ong-hours">
-            <strong>Horário de funcionamento:</strong>
-            <span>Seg-Sáb: 10h às 17h</span>
-          </div>
-        </article>
-      </section>
+      <section
+        class="ongs-list"
+        aria-label="Lista de ONGs"
+        id="ongs-container"
+      ></section>
 
       <aside class="tips-box" aria-labelledby="tips-title">
         <h2 id="tips-title">Dicas antes de visitar uma ONG:</h2>
         <ul class="tips-list">
-          <li>Entre em contato antes de visitar para confirmar horários e disponibilidade.</li>
-          <li>Leve documentos pessoais, como RG, CPF e comprovante de residência.</li>
-          <li>Esteja preparado para responder perguntas sobre sua rotina e moradia.</li>
+          <li>
+            Entre em contato antes de visitar para confirmar horários e
+            disponibilidade.
+          </li>
+          <li>
+            Leve documentos pessoais, como RG, CPF e comprovante de residência.
+          </li>
+          <li>
+            Esteja preparado para responder perguntas sobre sua rotina e
+            moradia.
+          </li>
           <li>Seja honesto sobre sua experiência com animais.</li>
           <li>Pergunte sobre o histórico de saúde e comportamento do gato.</li>
         </ul>
@@ -176,8 +128,13 @@
 
     <footer>
       <div class="footer-content">
-        <img src="assets/icons/icon-portal-felino.png" alt="Logo do Portal Felino" />
-        <p>© 2026 Portal Felino - Ajudando você a cuidar melhor do seu gatinho</p>
+        <img
+          src="assets/icons/icon-portal-felino.png"
+          alt="Logo do Portal Felino"
+        />
+        <p>
+          © 2026 Portal Felino - Ajudando você a cuidar melhor do seu gatinho
+        </p>
       </div>
     </footer>
   </body>
